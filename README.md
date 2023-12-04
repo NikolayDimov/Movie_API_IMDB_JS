@@ -10,7 +10,7 @@ Clone the Repository:
 
 bash
 
-git clone https://github.com/your-username/Movie_API_IMDB_JS.git
+git clone https://github.com/NikolayDimov/Movie_API_IMDB_JS.git
 
 Navigate to the Project Directory:
 
