@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie API</title>
+    <link rel="stylesheet" href="styles/site.css">
+    <script defer src="./js/api.js"></script>
+    <script defer src="./js/search.js"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+
+        <section class="header_container">
+            <nav class="top-nav">
+                <div class="navbar-portfolio-img">
+                    <a class="nav-link" href="#">
+                        <img src="./assets/logo-design-for-movie-production-company-01-.jpg" alt="Logo">
+                    </a>
+                </div>
+
+                <input id="menu-toggle" type="checkbox" for="sidebar menu" aria-labelledby="menu-toggle-label" />
+                <label class='menu-button-container' id="menu-toggle-label" for="menu-toggle"
+                    title="Toggle Sidebar"><span class="hidden-span">Toggle sidebar</span>
+                    <div class='menu-button'></div>
+                </label>
+
+                <ul class="menu nav-items">
+                    <li class="nav-item">
+                        <a id="home-link" class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+    </header>ß
+
+    <main class="main-content">
+        <section class="movie_container">
+            <section class="movie_container_search">
+                <div class="search-container">
+                    <label for="search">Search:</label>
+                    <input type="text" id="search" placeholder="Enter movie name">
+                    <button id="search-btn" class="search-btn">Search</button>
+                </div>
+            </section>
+
+            <div class="movie-cards"></div>
+        </section>
+
+
+
+
+        <div id="movieModal" class="modal">
+            <button class="close" onclick="closeModal()">X</button>
+            <p class="modal-title"></p>
+            <img class="modal-img" src="">
+            <div class="modal-content">
+                <p class="description"></p>
+                <p class="year"></p>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+
+                <h3 class="heading-tertiary footer__social-heading">Movie API</h3>
+
+
+
+
+                <div class="footer_bottom_nav">
+                    <nav class="nav footer__nav">
+                        <ul class="footer-nav-ul">
+                            <li class="footer-nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a class="nav-link" href="#work">All Movies</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a class="nav-link" href="#contact">Search</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- <script src="./js/api.js" type="module"></script>
+    <script src="./js/search.js" type="module"></script> -->
+
+
+    <!-- `
+    <script type="module">
+        import closeModal from "./index.js";
+    </script>
+    ` -->
+
+</body>
+
+</html>
