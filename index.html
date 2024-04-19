@@ -61,18 +61,17 @@
         </section>
 
 
-
-
         <div id="movieModal" class="modal">
-            <button class="close" onclick="closeModal()">X</button>
-            <p class="modal-title"></p>
-            <img class="modal-img" src="">
-            <div class="modal-content">
-                <p class="description"></p>
-                <p class="year"></p>
+            <div class="modal-container">
+                <button class="close" onclick="closeModal()">X</button>
+                <p class="modal-title"></p>
+                <img class="modal-img" src="">
+                <div class="modal-content">
+                    <p class="description"></p>
+                    <p class="year"></p>
+                </div>
             </div>
         </div>
-
     </main>
 
 
@@ -83,9 +82,6 @@
             <div class="footer-row">
 
                 <h3 class="heading-tertiary footer__social-heading">Movie API</h3>
-
-
-
 
                 <div class="footer_bottom_nav">
                     <nav class="nav footer__nav">
@@ -109,15 +105,15 @@
         </div>
 
     </footer>
-    <!-- <script src="./js/api.js" type="module"></script>
-    <script src="./js/search.js" type="module"></script> -->
 
 
-    <!-- `
-    <script type="module">
-        import closeModal from "./index.js";
-    </script>
-    ` -->
+    <!-- <script>
+        // Function to close the modal
+        function closeModal() {
+            const modal = document.getElementById("movieModal");
+            modal.style.display = "none";
+        }
+    </script> -->
 
 </body>
 
